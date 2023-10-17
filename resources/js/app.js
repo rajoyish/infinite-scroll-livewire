@@ -1,7 +1,9 @@
 import './bootstrap';
 
-// import Alpine from 'alpinejs';
+import { Livewire, Alpine } from '../../vendor/livewire/livewire/dist/livewire.esm';
 
-// window.Alpine = Alpine;
+import intersect from '@alpinejs/intersect'
+Alpine.plugin(intersect)
+ 
+Livewire.start()
 
-// Alpine.start();

@@ -22,9 +22,9 @@
       @endforeach
     </nav>
 
-    @if ($this->paginator->hasMorePages()) 
-      <div class="mt-8 text-center">
-        <x-primary-button wire:click="loadMore">Load More</x-primary-button>
-      </div>
-    @endif
+    <div x-intersect="$wire.loadMore">
+       
+    </div>
+
+  
 </div>
